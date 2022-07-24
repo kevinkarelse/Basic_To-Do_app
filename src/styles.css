@@ -71,9 +71,11 @@ input {
 
 ul {
   background: #00A36C;
+
 }
 
-/* Style the list items */
+
+/* Styling the list */
 ul li {
   font-family: "Times New Roman", Times, serif;
   cursor: pointer;
@@ -81,39 +83,39 @@ ul li {
   padding: 12px 8px 12px 40px;
   background: #eee;
   font-size: 25px;
-  transition: 0.2s;
+  transition: 0.5s;
   display:flex;
   border: 2px solid;
 
-  /* make the list items unselectable */
+
+
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-/* Set all odd list items to a different color (zebra-stripes) */
+/* Alteranates background color of all odd entries to list */
 ul li:nth-child(odd) {
   background: #f9f9f9;
 }
 
-/* Darker background-color on hover */
+/* darken background colour on hover */
 ul li:hover {
   background: #ddd;
 }
 
-/* When clicked on, add a background color and strike out text */
+/* Strike out text and darken background indicating completion of task */
 ul li.checked {
   background: #888;
   color: #fff;
   text-decoration: line-through;
 }
 
-/* Add a "checked" mark when clicked on */
+/* Adds a check mark once clicked on to indicate completion of task */
 ul li.checked::before {
   content: '';
   position: absolute;
-  border-color: #fff;
   border-style: solid;
   border-width: 0 2px 2px 0;
   top: 10px;
@@ -123,7 +125,7 @@ ul li.checked::before {
   width: 7px;
 }
 
-/* Style the close button */
+/* Styles the close button */
 .close {
   position: absolute;
   right: 0;
@@ -135,3 +137,5 @@ ul li.checked::before {
   background-color: #f44336;
   color: white;
 }
+
+
